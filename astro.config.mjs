@@ -1,4 +1,4 @@
-import node from "@astrojs/node";
+import vercel from "@astrojs/vercel/serverless";
 import react from "@astrojs/react";
 import { defineConfig, fontProviders } from "astro/config";
 import emdash, { local } from "emdash/astro";
@@ -6,9 +6,7 @@ import { sqlite } from "emdash/db";
 
 export default defineConfig({
 	output: "server",
-	adapter: node({
-		mode: "standalone",
-	}),
+	adapter: vercel(),
 	image: {
 		layout: "constrained",
 		responsiveStyles: true,
