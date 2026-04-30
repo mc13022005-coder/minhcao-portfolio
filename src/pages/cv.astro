@@ -1,0 +1,331 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Curriculum Vitae | Đỗ Cao Minh" description="CV of Đỗ Cao Minh - Data Analyst Intern">
+	<div class="cv-wrapper fade-in-up">
+		<div class="cv-container">
+			<!-- Left Column: Sidebar (30%) -->
+			<aside class="cv-sidebar">
+				<div class="avatar-container">
+					<img src="/avatar.jpg" alt="Đỗ Cao Minh Avatar" class="cv-avatar" />
+				</div>
+				
+				<div class="sidebar-section">
+					<h3>Liên hệ</h3>
+					<ul class="contact-list">
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+							<span>0982767328</span>
+						</li>
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+							<span>mc13022005@gmail.com</span>
+						</li>
+						<li>
+							<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+							<span>Cầu Diễn, Hà Nội</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="sidebar-section">
+					<h3>Học vấn</h3>
+					<div class="education-summary">
+						<p class="edu-school">ĐH Kinh tế - ĐHQGHN</p>
+						<p class="edu-major">Phân tích DL Kinh tế & CS</p>
+						<p class="edu-gpa">GPA: 3.12</p>
+					</div>
+				</div>
+			</aside>
+
+			<!-- Right Column: Main Content (70%) -->
+			<main class="cv-main">
+				<header class="cv-header">
+					<h1 class="cv-name">ĐỖ CAO MINH</h1>
+					<p class="cv-title">Sinh viên Thực tập Phân tích Dữ liệu</p>
+				</header>
+
+				<section class="main-section">
+					<h2>Mục tiêu nghề nghiệp</h2>
+					<p class="section-text">
+						Sinh viên Phân tích dữ liệu và chính sách công năng động mong muốn được tham gia chương trình thực tập để tích lũy kinh nghiệm thực tế, nâng cao kỹ năng chuyên môn và làm việc trong môi trường chuyên nghiệp.
+					</p>
+				</section>
+
+				<section class="main-section">
+					<h2>Nền tảng & Điểm mạnh</h2>
+					<ul class="text-list custom-bullet">
+						<li>Có nền tảng học thuật vững về kinh tế, dữ liệu và chính sách.</li>
+						<li>Khả năng hỗ trợ tổng hợp thông tin, lập báo cáo và trình bày nội dung trực quan.</li>
+						<li>Kỹ năng mềm: Làm việc nhóm, chủ động học hỏi, cẩn thận và đúng hạn.</li>
+					</ul>
+				</section>
+
+				<section class="main-section">
+					<h2>Kỹ năng & Công cụ</h2>
+					<div class="skills-grid">
+						<div class="skill-category">
+							<h3>Phân tích & Xử lý DL</h3>
+							<ul class="text-list custom-bullet">
+								<li>Power BI</li>
+								<li>Stata</li>
+							</ul>
+						</div>
+						<div class="skill-category">
+							<h3>Tin học & Báo cáo</h3>
+							<ul class="text-list custom-bullet">
+								<li>Excel, Word, PowerPoint</li>
+								<li>Google Workspace</li>
+							</ul>
+						</div>
+						<div class="skill-category">
+							<h3>Thiết kế</h3>
+							<ul class="text-list custom-bullet">
+								<li>Canva</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+</Base>
+
+<style>
+	/* Animation Setup */
+	@keyframes fadeInUp {
+		from { opacity: 0; transform: translateY(10px); }
+		to { opacity: 1; transform: translateY(0); }
+	}
+
+	.fade-in-up {
+		animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+	}
+
+	/* Wrapper and Container */
+	.cv-wrapper {
+		background-color: #f7f7f7;
+		/* Giảm padding dọc để trang gọn gàng hơn trên 1 màn hình */
+		padding: 2rem 1rem;
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		color: #2c2f33;
+	}
+
+	.cv-container {
+		background-color: #ffffff; 
+		max-width: 1000px;
+		width: 100%;
+		display: flex;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+		/* Bỏ border viền ngoài để làm sạch thiết kế */
+	}
+
+	/* Layout Columns */
+	.cv-sidebar {
+		flex: 0 0 30%;
+		/* Đường kẻ dọc cực mảnh ngăn cách 2 cột */
+		border-right: 1px solid rgba(0, 0, 0, 0.08);
+		padding: 2.5rem 2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.8rem;
+	}
+
+	.cv-main {
+		flex: 0 0 70%;
+		padding: 2.5rem 3rem;
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* Sidebar Elements */
+	.avatar-container {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 0.5rem;
+	}
+
+	.cv-avatar {
+		width: 110px; /* Thu nhỏ ảnh đại diện */
+		height: 110px;
+		border-radius: 50%;
+		object-fit: cover;
+		filter: contrast(1.05) saturate(0.95);
+	}
+
+	.sidebar-section h3 {
+		font-family: var(--font-sans);
+		font-size: 0.75rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #888;
+		margin-bottom: 0.8rem;
+	}
+
+	.contact-list {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.6rem;
+	}
+
+	.contact-list li {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-family: var(--font-sans);
+		font-size: 0.8rem;
+		color: #4a4a4a;
+	}
+
+	.contact-list svg {
+		color: #999;
+		flex-shrink: 0;
+	}
+
+	.education-summary {
+		font-family: var(--font-sans);
+		color: #4a4a4a;
+	}
+
+	.edu-school {
+		font-weight: 500;
+		font-size: 0.85rem;
+		margin-bottom: 2px;
+		color: #2c2f33;
+	}
+
+	.edu-major {
+		font-size: 0.8rem;
+		line-height: 1.4;
+		margin-bottom: 0.4rem;
+	}
+
+	.edu-gpa {
+		font-size: 0.8rem;
+		font-family: var(--font-serif);
+		font-style: italic;
+		color: #666;
+	}
+
+	/* Main Content Elements */
+	.cv-header {
+		margin-bottom: 1.8rem; /* Giảm khoảng cách để tiết kiệm chiều cao */
+	}
+
+	.cv-name {
+		font-family: var(--font-serif);
+		font-size: 3rem; /* Vừa đủ lớn để sang trọng nhưng không choáng chỗ */
+		font-weight: 300;
+		letter-spacing: 0.08em;
+		line-height: 1;
+		color: #1a1a1a;
+		margin-bottom: 0.5rem;
+		text-transform: uppercase;
+	}
+
+	.cv-title {
+		font-family: var(--font-sans);
+		font-size: 0.95rem;
+		color: #777;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+
+	.main-section {
+		margin-bottom: 1.5rem;
+	}
+
+	.main-section h2 {
+		font-family: var(--font-sans);
+		font-size: 0.8rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #555;
+		margin-bottom: 0.8rem;
+		padding-bottom: 6px;
+		/* Đường kẻ mảnh 0.5px */
+		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08); 
+	}
+
+	.section-text {
+		font-family: var(--font-sans);
+		font-size: 0.9rem;
+		line-height: 1.6;
+		color: #4a4a4a;
+	}
+
+	.text-list {
+		list-style: none;
+		padding: 0;
+		font-family: var(--font-sans);
+	}
+
+	.text-list li {
+		position: relative;
+		margin-bottom: 0.4rem;
+		font-size: 0.9rem;
+		line-height: 1.5;
+		color: #4a4a4a;
+	}
+
+	.custom-bullet li {
+		padding-left: 1rem;
+	}
+
+	.custom-bullet li::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 8px;
+		width: 3px;
+		height: 3px;
+		border-radius: 50%;
+		background-color: #888;
+	}
+
+	/* Skills */
+	.skills-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
+	}
+
+	.skill-category h3 {
+		font-family: var(--font-sans);
+		font-size: 0.8rem;
+		font-weight: 500;
+		color: #333;
+		margin-bottom: 0.4rem;
+	}
+
+	/* Responsive */
+	@media (max-width: 768px) {
+		.cv-container {
+			flex-direction: column;
+		}
+
+		.cv-sidebar {
+			flex: 1 1 auto;
+			border-right: none;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+			padding: 2rem;
+		}
+
+		.cv-main {
+			flex: 1 1 auto;
+			padding: 2rem;
+		}
+		
+		.skills-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
