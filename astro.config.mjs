@@ -6,7 +6,9 @@ import { sqlite } from "emdash/db";
 
 export default defineConfig({
 	output: "server",
-	adapter: vercel(),
+	adapter: vercel({
+		includeFiles: ["./data.db"],
+	}),
 	image: {
 		layout: "constrained",
 		responsiveStyles: true,
