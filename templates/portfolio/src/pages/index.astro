@@ -19,8 +19,8 @@ Astro.cache.set(cacheHint);
 
 <Base>
 	<section class="hero">
-		<h1 class="hero-title">{settings?.title || "Studio"}</h1>
-		<p class="hero-tagline">{settings?.tagline || "Design & Development"}</p>
+		<h1 class="hero-title">MINH CAO</h1>
+		<p class="hero-tagline">Economic Data Analysis & Policy</p>
 	</section>
 
 	{
@@ -47,11 +47,10 @@ Astro.cache.set(cacheHint);
 			</section>
 		) : (
 			<section class="empty-state">
-				<h2>No projects yet</h2>
-				<p>Add your first project in the admin panel.</p>
-				<a href="/_emdash/admin/content/projects/new" class="btn">
-					Add a project
-				</a>
+				<blockquote class="quote">
+					<p>"In God we trust. All others must bring data."</p>
+					<footer>— W. Edwards Deming</footer>
+				</blockquote>
 			</section>
 		)
 	}
@@ -119,18 +118,25 @@ Astro.cache.set(cacheHint);
 	.empty-state {
 		text-align: center;
 		padding: var(--spacing-4xl) var(--spacing-lg);
-		max-width: 400px;
+		max-width: 600px;
 		margin: 0 auto;
 	}
 
-	.empty-state h2 {
-		font-size: var(--font-size-xl);
+	.quote p {
+		font-family: var(--font-serif);
+		font-size: var(--font-size-2xl);
+		font-style: italic;
+		color: var(--color-text);
 		margin-bottom: var(--spacing-sm);
+		line-height: 1.4;
 	}
 
-	.empty-state p {
+	.quote footer {
+		font-family: var(--font-sans);
+		font-size: var(--font-size-sm);
 		color: var(--color-muted);
-		margin-bottom: var(--spacing-lg);
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
 	}
 
 	.btn {
