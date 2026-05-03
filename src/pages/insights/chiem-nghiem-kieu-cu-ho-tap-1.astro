@@ -1,0 +1,502 @@
+---
+import Base from "../../layouts/Base.astro";
+
+const title = "Chiêm nghiệm kiểu Cụ Hồ — Tập 1";
+const description = "Dưới lăng kính sinh viên Kinh tế UEB, hành trình cứu nước của Bác Hồ là một case study về tư duy khởi nghiệp và quản trị chiến lược.";
+const publishDate = "2025-05-01";
+const readingTime = "6 phút đọc";
+const series = "Chiêm nghiệm kiểu Cụ Hồ";
+const episode = 1;
+---
+
+<Base title={title} description={description} type="article">
+	<article class="insight-article" id="insight-chiem-nghiem-cu-ho-1">
+		<!-- Hero -->
+		<header class="article-hero">
+			<div class="hero-inner">
+				<div class="hero-meta">
+					<span class="meta-series">{series}</span>
+					<span class="meta-divider">·</span>
+					<span class="meta-episode">Tập {episode}</span>
+				</div>
+				<h1 class="article-title">{title}</h1>
+				<p class="article-excerpt">{description}</p>
+				<div class="hero-details">
+					<time datetime={publishDate} class="meta-date">
+						{new Date(publishDate).toLocaleDateString("vi-VN", { year: "numeric", month: "long", day: "numeric" })}
+					</time>
+					<span class="meta-divider">·</span>
+					<span class="meta-reading">{readingTime}</span>
+				</div>
+			</div>
+		</header>
+
+		<!-- Content -->
+		<div class="article-body">
+			<!-- Epigraph -->
+			<blockquote class="epigraph">
+				<p>"Không có gì quý hơn độc lập, tự do."</p>
+				<footer>— Hồ Chí Minh</footer>
+			</blockquote>
+
+			<!-- Section 1: Tư duy khởi nghiệp -->
+			<section class="content-section" id="section-khoi-nghiep">
+				<div class="section-number" aria-hidden="true">01</div>
+				<h2>Case study về tư duy khởi nghiệp</h2>
+				<p>
+					Dưới lăng kính của một sinh viên Kinh tế tại UEB, mình nhận thấy hành trình tìm đường cứu nước của Bác Hồ không chỉ là một trang sử hào hùng, mà còn là một <em>"case study"</em> điển hình về tư duy khởi nghiệp và quản trị chiến lược mà thế hệ trẻ ngày nay có thể học hỏi.
+				</p>
+				<p>
+					Bắt đầu từ việc giải quyết câu hỏi cốt lõi <strong>"Tại sao?"</strong>, Bác đã xây dựng một động cơ đủ lớn để thuyết phục cả dân tộc đi theo lý tưởng của mình. Trong kinh doanh cũng vậy, nếu không hiểu được giá trị cốt lõi cho mọi hành động, chúng ta sẽ không thể đi xa.
+				</p>
+			</section>
+
+			<!-- Section 2: Thâm nhập thị trường -->
+			<section class="content-section" id="section-tham-nhap">
+				<div class="section-number" aria-hidden="true">02</div>
+				<h2>Chiến thuật "thâm nhập thị trường"</h2>
+				<p>
+					Đặc biệt, chiến thuật "thâm nhập thị trường" bằng vị trí phụ bếp trên tàu là một minh chứng cho việc <strong>tối ưu hóa nguồn lực</strong>: chọn một công việc rào cản thấp nhưng mang lại tỷ suất hoàn vốn cao nhất về mặt trải nghiệm và học hỏi.
+				</p>
+
+				<aside class="insight-callout">
+					<div class="callout-icon" aria-hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+					</div>
+					<p>
+						Bài học này nhắc nhở mình—một người trẻ—rằng <em>sự bắt đầu khiêm tốn luôn là nền tảng vững chắc nhất</em> để mở rộng tầm nhìn mà không bị đè nặng bởi những kỳ vọng viển vông.
+					</p>
+				</aside>
+			</section>
+
+			<!-- Section 3: Giấc mơ và tham vọng -->
+			<section class="content-section" id="section-tham-vong">
+				<div class="section-number" aria-hidden="true">03</div>
+				<h2>Giấc mơ và tham vọng</h2>
+				<p>
+					Sự khác biệt giữa giấc mơ và tham vọng nằm ở <strong>hành động thực tế</strong>. Bác đã minh chứng rằng tinh thần luôn khát khao không phụ thuộc vào xuất thân, mà nằm ở độ lớn của tham vọng vươn tới những giá trị lớn lao.
+				</p>
+				<p>
+					Và mục tiêu tối thượng cho mọi việc là <em>"độc lập, tự do, hạnh phúc"</em>, mọi nhượng bộ khác đều trở nên thứ yếu.
+				</p>
+			</section>
+
+			<!-- Divider -->
+			<hr class="content-divider" />
+
+			<!-- Section 4: Đức tính giản dị -->
+			<section class="content-section content-section--highlight" id="section-gian-di">
+				<div class="section-number" aria-hidden="true">04</div>
+				<h2>Đức tính giản dị — Sự vĩ đại không ồn ào</h2>
+				<p>
+					Điều làm mình trăn trở và đồng điệu nhất sau series này chính là đức tính giản dị của Cụ—<strong>một sự vĩ đại không ồn ào</strong>. Không chỉ là việc tinh giản đồ đạc, mà là sự tối giản trong tư duy để tập trung nguồn lực vào điều quan trọng nhất.
+				</p>
+				<p>
+					Bác đã tối giản hóa thông điệp <em>"Không có gì quý hơn độc lập tự do"</em> để chạm đến trái tim hàng triệu người, đồng thời tối giản hóa "cái tôi" để sẵn sàng làm những công việc nhỏ nhất.
+				</p>
+			</section>
+
+			<!-- Section 5: Nhìn lại bản thân -->
+			<section class="content-section" id="section-nhin-lai">
+				<div class="section-number" aria-hidden="true">05</div>
+				<h2>Nhìn lại bản thân</h2>
+				<p>
+					Nhìn lại bản thân, mình nhận ra giá trị thực sự không nằm ở những danh xưng hào nhoáng hay mức lương khởi điểm, mà ở <strong>những gì mình học được</strong>.
+				</p>
+				<p>
+					Lối sống tối giản giúp mình cắt bỏ những "tiếng ồn" của chủ nghĩa tiêu dùng để dành trọn vẹn tài nguyên cho những tham vọng lớn hơn, giúp mình <em>độc lập hơn về cả tư duy lẫn tài chính</em> thay vì phụ thuộc vào gia đình.
+				</p>
+			</section>
+
+			<!-- Takeaways -->
+			<section class="takeaways" id="section-takeaways">
+				<h3 class="takeaways-title">Điểm chốt</h3>
+				<ol class="takeaways-list">
+					<li>
+						<strong>Bắt đầu từ "Tại sao?"</strong> — Hiểu giá trị cốt lõi trước khi hành động.
+					</li>
+					<li>
+						<strong>Tối ưu hóa nguồn lực</strong> — Chọn rào cản thấp, tỷ suất hoàn vốn cao.
+					</li>
+					<li>
+						<strong>Tham vọng ≠ Viển vông</strong> — Sự khác biệt nằm ở hành động thực tế.
+					</li>
+					<li>
+						<strong>Tối giản = Tập trung</strong> — Cắt bỏ tiếng ồn, dành trọn cho điều quan trọng.
+					</li>
+				</ol>
+			</section>
+		</div>
+
+		<!-- Footer navigation -->
+		<footer class="article-footer">
+			<a href="/insights" class="back-link">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+				Tất cả bài chiêm nghiệm
+			</a>
+		</footer>
+	</article>
+</Base>
+
+<style>
+	/* Article Layout */
+	.insight-article {
+		max-width: var(--max-width);
+		margin: 0 auto;
+		padding: 0 var(--spacing-lg);
+	}
+
+	/* Hero */
+	.article-hero {
+		padding: var(--spacing-4xl) 0 var(--spacing-3xl);
+		border-bottom: 1px solid var(--color-border);
+		margin-bottom: var(--spacing-3xl);
+	}
+
+	.hero-inner {
+		max-width: 100%;
+	}
+
+	.hero-meta {
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-sm);
+		margin-bottom: var(--spacing-lg);
+		font-size: var(--font-size-sm);
+		color: var(--color-muted);
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+	}
+
+	.meta-series {
+		color: var(--color-accent);
+		font-weight: 500;
+	}
+
+	.meta-divider {
+		opacity: 0.4;
+	}
+
+	.article-title {
+		font-family: var(--font-serif);
+		font-size: var(--font-size-3xl);
+		font-weight: 500;
+		line-height: 1.15;
+		letter-spacing: -0.02em;
+		margin-bottom: var(--spacing-lg);
+	}
+
+	.article-excerpt {
+		font-size: var(--font-size-lg);
+		color: var(--color-muted);
+		line-height: 1.6;
+		font-family: var(--font-serif);
+		font-style: italic;
+		margin-bottom: var(--spacing-xl);
+	}
+
+	.hero-details {
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-sm);
+		font-size: var(--font-size-sm);
+		color: var(--color-muted);
+	}
+
+	/* Body */
+	.article-body {
+		padding-bottom: var(--spacing-3xl);
+	}
+
+	/* Epigraph */
+	.epigraph {
+		margin: 0 0 var(--spacing-3xl);
+		padding: var(--spacing-xl) var(--spacing-2xl);
+		border-left: 2px solid var(--color-accent);
+		background: linear-gradient(135deg, rgba(124, 58, 237, 0.03), transparent);
+		border-radius: 0 var(--radius) var(--radius) 0;
+	}
+
+	.epigraph p {
+		font-family: var(--font-serif);
+		font-size: var(--font-size-xl);
+		font-style: italic;
+		line-height: 1.5;
+		color: var(--color-text);
+		margin-bottom: var(--spacing-sm);
+	}
+
+	.epigraph footer {
+		font-family: var(--font-sans);
+		font-size: var(--font-size-sm);
+		color: var(--color-muted);
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	/* Content Sections */
+	.content-section {
+		position: relative;
+		margin-bottom: var(--spacing-3xl);
+		padding-left: 3.5rem;
+	}
+
+	.section-number {
+		position: absolute;
+		left: 0;
+		top: 0.15em;
+		font-family: var(--font-serif);
+		font-size: var(--font-size-sm);
+		color: var(--color-accent-muted);
+		font-weight: 500;
+		letter-spacing: 0.05em;
+		opacity: 0.6;
+	}
+
+	.content-section h2 {
+		font-family: var(--font-serif);
+		font-size: var(--font-size-xl);
+		font-weight: 500;
+		margin-bottom: var(--spacing-lg);
+		line-height: 1.3;
+	}
+
+	.content-section p {
+		font-size: var(--font-size-base);
+		line-height: 1.8;
+		color: var(--color-text);
+		margin-bottom: var(--spacing-md);
+	}
+
+	.content-section p:last-child {
+		margin-bottom: 0;
+	}
+
+	.content-section em {
+		font-family: var(--font-serif);
+		color: var(--color-accent);
+	}
+
+	.content-section strong {
+		font-weight: 600;
+		color: var(--color-text);
+	}
+
+	/* Highlight Section */
+	.content-section--highlight {
+		background: var(--color-surface);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius);
+		padding: var(--spacing-2xl);
+		padding-left: 4.5rem;
+		margin-left: -1rem;
+		margin-right: -1rem;
+	}
+
+	.content-section--highlight .section-number {
+		left: 1.5rem;
+	}
+
+	/* Insight Callout */
+	.insight-callout {
+		display: flex;
+		gap: var(--spacing-md);
+		padding: var(--spacing-lg);
+		margin-top: var(--spacing-xl);
+		background: var(--color-surface);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius);
+	}
+
+	.callout-icon {
+		flex-shrink: 0;
+		color: var(--color-accent);
+		margin-top: 2px;
+	}
+
+	.insight-callout p {
+		font-size: var(--font-size-sm);
+		line-height: 1.7;
+		margin-bottom: 0;
+	}
+
+	/* Divider */
+	.content-divider {
+		border: none;
+		height: 1px;
+		background: var(--color-border);
+		margin: var(--spacing-3xl) 0;
+		position: relative;
+	}
+
+	.content-divider::after {
+		content: "◆";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background: var(--color-bg);
+		padding: 0 var(--spacing-md);
+		color: var(--color-accent-muted);
+		font-size: 0.6rem;
+	}
+
+	/* Takeaways */
+	.takeaways {
+		margin-top: var(--spacing-3xl);
+		padding: var(--spacing-2xl);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius);
+		background: var(--color-surface);
+	}
+
+	.takeaways-title {
+		font-family: var(--font-sans);
+		font-size: var(--font-size-sm);
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: var(--color-muted);
+		margin-bottom: var(--spacing-xl);
+	}
+
+	.takeaways-list {
+		list-style: none;
+		counter-reset: takeaway;
+		padding: 0;
+	}
+
+	.takeaways-list li {
+		counter-increment: takeaway;
+		position: relative;
+		padding-left: 2.5rem;
+		margin-bottom: var(--spacing-lg);
+		font-size: var(--font-size-base);
+		line-height: 1.6;
+	}
+
+	.takeaways-list li:last-child {
+		margin-bottom: 0;
+	}
+
+	.takeaways-list li::before {
+		content: counter(takeaway);
+		position: absolute;
+		left: 0;
+		top: 0;
+		font-family: var(--font-serif);
+		font-size: var(--font-size-sm);
+		font-weight: 500;
+		color: var(--color-accent);
+		width: 1.5rem;
+		height: 1.5rem;
+		border: 1px solid var(--color-accent-muted);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.takeaways-list li strong {
+		display: block;
+		margin-bottom: 0.2rem;
+	}
+
+	/* Footer */
+	.article-footer {
+		padding: var(--spacing-2xl) 0 var(--spacing-4xl);
+		border-top: 1px solid var(--color-border);
+	}
+
+	.back-link {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--spacing-sm);
+		font-size: var(--font-size-sm);
+		color: var(--color-muted);
+		text-decoration: none;
+		transition: color var(--transition-fast);
+	}
+
+	.back-link:hover {
+		color: var(--color-text);
+	}
+
+	/* Scroll reveal animations */
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			transform: translateY(16px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.content-section,
+	.epigraph,
+	.takeaways {
+		animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+	}
+
+	.content-section:nth-child(1) { animation-delay: 0.1s; }
+	.content-section:nth-child(2) { animation-delay: 0.2s; }
+	.content-section:nth-child(3) { animation-delay: 0.3s; }
+	.content-section:nth-child(4) { animation-delay: 0.4s; }
+	.content-section:nth-child(5) { animation-delay: 0.5s; }
+
+	/* Responsive */
+	@media (max-width: 768px) {
+		.article-hero {
+			padding: var(--spacing-3xl) 0 var(--spacing-2xl);
+		}
+
+		.article-title {
+			font-size: var(--font-size-2xl);
+		}
+
+		.content-section {
+			padding-left: 2.5rem;
+		}
+
+		.content-section--highlight {
+			padding-left: 3.5rem;
+			margin-left: -0.5rem;
+			margin-right: -0.5rem;
+		}
+
+		.content-section--highlight .section-number {
+			left: 1rem;
+		}
+
+		.epigraph {
+			padding: var(--spacing-lg);
+		}
+	}
+
+	@media (max-width: 480px) {
+		.hero-meta,
+		.hero-details {
+			flex-wrap: wrap;
+		}
+
+		.content-section {
+			padding-left: 0;
+		}
+
+		.section-number {
+			position: static;
+			margin-bottom: var(--spacing-sm);
+		}
+
+		.content-section--highlight {
+			padding-left: var(--spacing-xl);
+		}
+
+		.content-section--highlight .section-number {
+			position: static;
+			left: auto;
+		}
+	}
+</style>
